@@ -37,8 +37,9 @@ fun exercise_1() {
     }
 }
 
-class Node(var data : Int, var next: Node? = null)
-
+/*Prompts the user to input three numbers. Makes a linkedlist and addsthem to that list
+* then it uses list.sort function to sort them from the smallest to the biggest and prints the 3rd element
+* effectively printing the biggest number*/
 fun exercise_2() {
     val linkedListNumbers = LinkedList<Int>()
     val num1 = readValidNumber("Enter the first number")
@@ -52,6 +53,8 @@ fun exercise_2() {
     println("The largest number is ${linkedListNumbers[2]}")
 }
 
+/*Prompts the user to input three numbers. and compares them to print the biggest on the screen
+* I could only use two variables. v0*/
 fun exercise_2_1_v0() {
     var num1 = readValidNumber("Enter the first number")
     var num2 = readValidNumber("Enter the second number")
@@ -71,6 +74,8 @@ fun exercise_2_1_v0() {
     }
 }
 
+/*Prompts the user to input three numbers. and compares them to print the biggest on the screen
+* I could only use two variables. v1*/
 fun exercise_2_1_v1() {
     var num1 = readValidNumber("Enter the first number")
     var num2 = readValidNumber("Enter the second number")

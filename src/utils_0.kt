@@ -11,6 +11,7 @@ fun readValidNumber(prompt : String) : Int {
     }
 }
 
+/*Prompts the user for a number, checks if it's not null and is valid or if it was an empty string*/
 fun readValidNumberOrEmpty(prompt : String) : String {
     while (true) {
         println(prompt)
@@ -23,6 +24,8 @@ fun readValidNumberOrEmpty(prompt : String) : String {
     }
 }
 
+/*Prompts the user with a text, then checks if what the user enetered exists in an array of strings 'options'
+* used for rock, paper, scissors game. it is not case sensetive*/
 fun readValidOptionRPS(prompt : String, options: Array<String>) : String {
     var userInput : String
     var isValid : Boolean
@@ -36,6 +39,8 @@ fun readValidOptionRPS(prompt : String, options: Array<String>) : String {
     return (userInput)
 }
 
+/*Prompts the user with a text, then checks if the user entered a vlaid string and it returns that string.
+* if not it loops */
 fun readValidString(prompt : String) : String {
     while (true) {
         println(prompt)
@@ -48,6 +53,10 @@ fun readValidString(prompt : String) : String {
 }
 
 /*Linkedlists practice
+
+/*A class representating a Node in a linked list*/
+class Node(var data : Int, var next: Node? = null)
+
 class Node(var data : Int, var next: Node? = null)
 class LinkedList {
     var head : Node? = null

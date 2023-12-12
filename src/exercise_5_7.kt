@@ -1,3 +1,4 @@
+/*I have no clue why this was an excersise, too easy*/
 fun exercise_5_v0() {
     var numero1: Int? = 3
     var numero2: Int? = 4
@@ -5,14 +6,15 @@ fun exercise_5_v0() {
     println("$sum")
 }
 
+/*I have no clue why this was an excersise, too easy*/
 fun exercise_5_v1() {
     var numero1: Int? = 3
     var numero2: Int? = 4
     println("${numero1!! + numero2!!}")
 }
 
-
-
+/*A rock paper scissors game, I don't know how to hide the user input,
+* so I had to use a ton of new lines to "clear" the terminal*/
 fun exercise_6() {
     val options = arrayOf("rock", "paper", "scissors")
     val usr1 = readValidOptionRPS("Player 1, enter rock, paper, scissors:", options)
@@ -29,6 +31,12 @@ fun exercise_6() {
     else
         println("player 2 wins")
 }
+
+/*A fizz buzz calculator with a banner
+* Prompts the user to entere a number, checks if it was valid
+* if it's divisable by 15, it prints fizzbuzz
+* if it's divisable by 3, it prints fizz
+* it's divisable by 5, it prints buzz*/
 
 fun exercise_7() {
     printBannerFizzBuzz()

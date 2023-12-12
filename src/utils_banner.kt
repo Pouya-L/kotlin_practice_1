@@ -18,6 +18,7 @@ fun printBannerDC(){
     println("\t${purpleColor}╚════════════════════════════════════════╝${defaultColor}")
 }
 
+/*Prints a banner for the fizzbuzz calculator*/
 fun printBannerFizzBuzz(){
     val purpleColor = "\u001B[35m"
     val defaultColor = "\u001B[37m"
